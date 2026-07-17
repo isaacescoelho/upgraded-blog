@@ -282,9 +282,5 @@ def send_email(name, email, phone, message):
         connection.login(MAIL_ADDRESS, MAIL_APP_PW)
         connection.sendmail(email, MAIL_ADDRESS, email_message)
 
-
-print(MAIL_ADDRESS)
-print(MAIL_APP_PW)
-
 if __name__ == "__main__":
     app.run(debug=False, port=5001)
